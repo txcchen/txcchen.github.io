@@ -1,6 +1,14 @@
 
 body {
     text-align: left;
+    background-color: #F8FAFA;
+    color: #1D1E26;
+}
+
+h3 {
+    font-weight: 500;
+    color: #B1647A;
+    font-variant: small-caps;
 }
 
 #main {
@@ -13,15 +21,103 @@ body {
     margin-top: 50px;
 }
 
-.info p{
-    margin: 0;
+.row{
+    margin-bottom: 1em;
+}
+
+/* .info{
+    font-size: 25px;
+} */
+
+.isPink{
+    color: #B1647A;
+}
+
+/* Expand button on hover: https://codepen.io/lucasfads/pen/QWwjGjv*/
+.btnLink{
+    color: #B1647A;
+    background-color: #F8FAFA;
+    /* border-style: solid;
+    border-color: #B1647A;; */
+    padding: 3px;
+    height: 35px;
+    display: inline-flex;
+    align-items: center;
+    overflow:hidden;
+    width: auto;
+    max-width: 32px; 
+    -webkit-transition: max-width 0.5s;
+    transition: max-width 0.5s;
+}
+
+  .btnLink:hover {
+    max-width: 200px;
+  }
+  
+  .icon {
+    font-size: 25px;
+    margin-right: 5px;
+    padding: 0px 2px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .btnText {
+    color: #B1647A;
+    white-space: nowrap;
+    font-size: 18px;
+    padding-right: 5px;
+    font-variant: small-caps;
+  }
+
+
+
+
+/* https://www.impressivewebs.com/animating-css3-gradients/ */
+.project .card{
+    border: 0;
+    border-radius: 5%;
+    padding: 0.5em;
+    background-color: #1D1E26;
+    color: #F8FAFA;
+    margin-bottom: 10px;;
+    /* background: linear-gradient(#F8FAFA, #B1647A);
+    background-size: 100% 200%; */
+    transition: all 0.5s ease-out;
+}
+.project .card:hover {
+    background-color: #F8FAFA;
+    color:  #1D1E26;
+    border-style: solid;
+    /* border-width: 0.15em; */
+    border-color: #aeb4bd;
+}
+
+.card-title{
+    font-weight: bold;
+}
+
+.shortdes{
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.card-img-top{
+    height: 150px;
+    width: auto;
+    object-fit: cover;
 }
 
 /* footer */
 footer{
     /* color: white;
     background-color:#666666; */
-    text-align: center;
-    padding-top: 3em;
+    /* text-align: center; */
+    margin: auto;
+    max-width: 1000px;
+    padding-top: 1em;
+    padding-bottom: 1em;
     font-size: 15px;
+    background-color: #F8FAFA;
+    color: #1D1E26;
 }

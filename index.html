@@ -7,116 +7,150 @@
 
         <!-- Boostrap CSS only -->
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+        <!--FontAwesome-->
+        <script src="https://kit.fontawesome.com/3e81c20759.js" crossorigin="anonymous"></script>
         <!-- my css link-->
         <link rel="stylesheet" type="text/css" href="style.css">
+
+        <!--font options: https://fonts.google.com/
+        https://fonts.google.com/specimen/Nunito-->
     </head>
 
     <body>
 
         <div id="main">
-            <h1 style="font-weight: bold; font-variant: small-caps;">Tiffany Chen</h1>
+            <h1 style="font-weight: bold; font-variant: small-caps; color: #B1647A">Hi! I'm Tiffany</h1>
     
-            <!-- <p style="text-align: center; color: gray;"> [this website is a work in progress]</p> -->
             <!--About Me-->
-            <h3 style="font-weight: 500; color: gray; font-variant: small-caps; text-align: center ;">About Me</h3>
+            <!-- <h3>Tiffany Chen</h3> -->
+            <h6 style="text-transform: uppercase;">Tiffany Chen</h6>
+            <h6 style="text-transform: uppercase;"> Software/Web Developer & Artist</h6>
             <div id="about">
                 <p>
-                    Hi, I'm Tiffany! I am studying Computer Science and Visual Arts at Boston University. 
-                    I love creating and I get super excited about combining code and art together.
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                    Pretium viverra suspendisse potenti nullam ac tortor. Odio euismod lacinia at quis. 
+                    Interdum posuere lorem ipsum dolor sit amet consectetur adipiscing. Est sit amet facilisis magna.
                 </p>
             </div> <!--about end-->
     
             <!--Links-->
+            <!--add in some icons-->
             <div class="info">
-                <p>Github: <a href="https://github.com/txcchen">txcchen</a></p>
-                <!-- <p>Resume: </p> -->
+    
+                <a href="https://github.com/txcchen" class="btn btn-lg btnLink">
+                    <span class="icon"><i class="fa-brands fa-square-github isPink"></i> </span>
+                    <span class="btnText">My Github</span>
+                </a>
+
+                <a href="mailto: tchen556@bu.edu" class="btn btn-lg btnLink">
+                    <span class="icon"><i class="fa-solid fa-envelope isPink"></i> </span>
+                    <span class="btnText">Contact Me!</span>
+                </a>
             </div>    
 
             <hr>
             <!-- Group Projects-->
-            <div class="row">
-                <h3 style="font-weight: 500; color: gray; font-variant: small-caps; text-align: center;">Projects</h3>
-                <p style="text-align: center; color: gray;"> some projects I worked on</p>
+            <!-- ref: https://getbootstrap.com/docs/4.4/components/card/-->
+            <!--https://codingyaar.com/bootstrap-card-hover-effect-3-background-color-change/-->
+            
+            
+            <!--Projects-->
+            <h3> Projects</h3>
+            <p> some projects I worked on</p>
 
-                <!--Project Game Jam-->
+
+            <!--Column-->
+            <div class="col"> 
+                    
+                <!--row 1-->
                 <div class="row">
-                    <div class = "col-lg-3 info" style="height: 150px;">
-                        <h5>Slice of Jam 2023 - BABEL</h5>
-                        <p> Oct - Dec 2022
-                        <br> <a href="https://splitsuns.itch.io/babel">Itch.io</a>
-                        </p>
+                    
+                    <!--Project (placeholder for BeiBei)-->
+                    <!-- <div class = "col-sm-4">
+                        <div class = "project">
+                            <div class="card" id = "CustomWebsite">
+                                <img src="odysseaaboutsnip.PNG" class="card-img-top" alt="Website Sample Screenshot">
+                                <div class="card-body">
+                                    <h5 class="card-title">Custom Website</h5>
+                                    <h6 class="card-text shortdes">Website</h6>
+                                    <p class="card-text">A website for CS103 Intro to Web Programming designed and coded from scratch in team of 2. 
+                                </p>
+                                </div>
+                                </div>
+                        </div>
+                    </div> -->
+                    <!--Project End-->
+
+                    <!--Project-->
+                    <div class = "col-sm-4">
+                        <div class = "project">
+                            <div class="card" id = "babel">
+                                <img src="babel_titlescreen.PNG" class="card-img-top rounded" alt="babel titlescreen screenshot">
+                                <div class="card-body">
+                                    <h5 class="card-title">Project title</h5>
+                                    <h6 class="card-text shortdes">Game Jam Submission</h6>
+                                    <p class="card-text">A visual novel for NorthEastern's 48 hours Slice of Jam 2023. Developed in team of 5.
+                                </p>
+                                </div>
+                                </div>
+                        </div>
                     </div>
-                    <div class="col-lg-9">
-                        <p style="font-variant: small-caps;">Programmer, Artist</p>
-                        <p>
-                            Worked in a team of 5 for Northeastern University's Slice of Jam Game Jam 2023 (48 hours). 
-                            Programmed the story and art, including adding in sound and other effects in Ren'Py.
-                            Designed and drew character sprites. 
-                        </p>
-                    </div> 
-                </div><!--Project Game Jam-->
-                <hr>
+                    <!--ProjectEnd-->
 
-                <!--Project 1-->
-                <div class="row">
-                    <div class = "col-lg-3 info" style="height: 150px;">
-                        <h5>GiftMe! Mobile App Development Practicum</h5>
-                        <p> Oct - Dec 2022
-                        <br> <a href="https://github.com/AlAuB/GiftMe/tree/dev">Github</a>
-                        </p>
+                    <!--Project-->
+                    <div class = "col-sm-4">
+                        <div class = "project">
+                            <div class="card" id = "giftme">
+                                <img src="giftmesample.PNG" class="card-img-top" alt="GiftMe! App Screenshot">
+                                <div class="card-body">
+                                    <h5 class="card-title">GiftMe! Mobile App</h5>
+                                    <h6 class="card-text shortdes">Android App</h6>
+                                    <p class="card-text">A wishlist app designed & developed in a team of 6 for Mobile App Development Practicum. 
+                                    </p>
+                                </div>
+                                </div>
+                        </div>
                     </div>
-                    <div class="col-lg-9">
-                        <p style="font-variant: small-caps;">Developer</p>
-                        <p>
-                            Designed and built an android app in a team of 6 to allow users to create and share wishlists with friends,
-                            interact with friends' wishlists and provide feedback to other friends. The goal is a wishlist app that is simple and 
-                            intuitive to use, focusing on the feature of "claiming" an item in the wishlist and having other viewers see the claimed status.
-                        </p>
-                    </div> 
-                </div><!--Project 1 end-->
+                    <!--Project End-->
 
-                <hr>
-                <!--Project 2-->
-                <div class="row">
-                    <div class = "col-lg-3 info" style="height: 150px;">
-                        <h5>Councillor Worrell x Small Businesses Spark! Project </h5>
-                        <p> Oct - Dec 2022
-                        <br> <a href="https://github.com/BU-Spark/ds-councilor-worrell-small-business/tree/dev/fall22-team-2">Github</a>
-                        </p>
+                    <!--Project-->
+                    <div class = "col-sm-4">
+                    <div class = "project">
+                        <div class="card" id = "toyhouse">
+                            <img src="toyhousecode_sample.PNG" class="card-img-top" alt="ToyhouseCode Sample Screenshot">
+                            <div class="card-body">
+                                <h5 class="card-title">Character Profiles</h5>
+                                <h6 class="card-text shortdes">Toyhouse Codes</h6>
+                                <p class="card-text">Various profile and character codes for my characters on Toyhou.se, a character repository.
+                            </p>
+                            </div>
+                            </div>
                     </div>
-                    <div class="col-lg-9">
-                        <p style="font-variant: small-caps;">Data Analyst</p>
-                        <p>
-                            Collaborated with a team of 4 to analyze BPDA, City of Boston MBE and relevant datasets using Pandas and GeoPandas 
-                            to understand the current landscape of small businesses in Boston District 4, 
-                            determine current issues small businesses face and ways to attract small businesses to District 4.
-                            We identified barriers and successes of District 4 in comparison to other districts, 
-                            as well as reasonable benchmarks for small businesses and submitted a written report to City Councilor Worrell.
-                        </p>
-                    </div> 
-                </div><!--Project 2 end-->
-
-
-                <hr>
-                <!--Project 3-->
-                <div class="row">
-                    <div class = "col-lg-3 info" style="height: 150px;">
-                        <h5>Custom Website</h5>
-                        <p> Nov - Dec 2021
-                        <br> <a href="https://cs-people.bu.edu/tchen556/character_page.html">Sample</a>
-                        </p>
                     </div>
-                    <div class="col-lg-9">
-                        <p style="font-variant: small-caps;">Developer</p>
-                        <p>
-                            Worked in a team of 2 to design and code a website from scratch. We made a mock entertainment company website based off 
-                            our original characters. 
-                        </p>
-                    </div> 
-                </div><!--Project 3 end-->
+                    <!--ProjectEnd-->
+
+                    <!--Project-->
+                    <div class = "col-sm-4">
+                        <div class = "project">
+                            <div class="card" id = "CustomWebsite">
+                                <img src="odysseaaboutsnip.PNG" class="card-img-top" alt="Website Sample Screenshot">
+                                <div class="card-body">
+                                    <h5 class="card-title">Custom Website</h5>
+                                    <h6 class="card-text shortdes">Website</h6>
+                                    <p class="card-text">A website for CS103 Intro to Web Programming designed and coded from scratch in team of 2. 
+                                </p>
+                                </div>
+                                </div>
+                        </div>
+                    </div>
+                    <!--Project End-->
+                </div> <!--row 1 end-->
 
 
-            </div> <!--Projects end-->
+                </div> <!--row 1 end-->
+
+            </div> <!-- column end-->
+            <!--Projects end-->
 
         </div> <!--main end-->
 
@@ -127,5 +161,19 @@
         ©Tiffany X. Chen. All Rights Reserved.
     </footer>
 
+    <script>
+        
+        //reference: https://stackoverflow.com/questions/43042901/javascript-click-event-handler-fires-without-clicking
+        document.getElementById("babel").addEventListener("click", function (){openPage("https://splitsuns.itch.io/babel");});
+        document.getElementById("giftme").addEventListener("click", function (){openPage("https://github.com/AlAuB/GiftMe");});
+
+        
+        function openPage(pgName) {
+            // const mainLink = ".html"
+            // const url = pgName.concat(mainLink);
+            const url = pgName;
+            window.open(url, "_self")
+        }
+        </script>
 
 </html>
