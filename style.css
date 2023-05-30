@@ -5,6 +5,11 @@ body {
     color: #1D1E26;
 }
 
+.heading{
+    display: flex;
+    justify-content: space-between;
+}
+
 h3 {
     font-weight: 500;
     color: #B1647A;
@@ -69,8 +74,6 @@ h3 {
     padding-right: 5px;
     font-variant: small-caps;
   }
-
-
 
 
 /* https://www.impressivewebs.com/animating-css3-gradients/ */

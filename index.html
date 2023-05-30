@@ -19,17 +19,39 @@
     <body>
 
         <div id="main">
-            <h1 style="font-weight: bold; font-variant: small-caps; color: #B1647A">Hi! I'm Tiffany</h1>
+
+            <!--heading-->
+            <h1 style="font-weight: bold; font-variant: small-caps; color: #B1647A" class="heading">Hi! I'm Tiffany
+
+                <a href="index.html" class="btn btn-lg btnLink">
+                    <span class="icon"><i class="fa-solid fa-house isPink float-right"></i> </span>
+                    <span class="btnText">Home</span>
+                </a>
+            </h1>
     
             <!--About Me-->
             <!-- <h3>Tiffany Chen</h3> -->
-            <h6 style="text-transform: uppercase;">Tiffany Chen</h6>
-            <h6 style="text-transform: uppercase;"> Software/Web Developer & Artist</h6>
+            <h6 style="text-transform: uppercase; color: #1D1E26;" class="shortdes">Tiffany Chen</h6>
+            <h6 style="text-transform: uppercase; color: #1D1E26;" class="shortdes"> Software/Web Developer & Artist</h6>
             <div id="about">
                 <p>
-                    I graduated from Boston University with a B.A. in Computer Science in May 2023.
-                    A large part of my day is spent clickety-clacketing away at my computer coding personal projects.  
+                    I graduated from Boston University with a B.A. in Computer Science in May 2023. <br>
+                    A large part of my day is spent clickety-clacketing away at my computer learning and  coding personal projects.  
                 </p>
+
+            
+                <h6 style="text-transform: uppercase; color: #1D1E26;" class="shortdes">Skills</h6>
+                
+                <p>
+                    <span style="color:#B1647A; font-weight: bolder;"> Software Development: </span> 
+                    HTML5, CSS, JavaScript, Python, Java, Android Studio, MySQL, SQLite, GitHub, Agile 
+                <br>
+                    <span style="color:#B1647A; font-weight: bolder;"> Art & Design: </span> 
+                    Figma, Adobe Photoshop, Adobe Illustrator, Adobe InDesign, Paint Tool Sai 2
+                </p>
+  
+
+ 
             </div> <!--about end-->
     
             <!--Links-->
@@ -84,9 +106,9 @@
                     <div class = "col-sm-4">
                         <div class = "project">
                             <div class="card" id = "babel">
-                                <img src="babel_titlescreen.PNG" class="card-img-top rounded" alt="babel titlescreen screenshot">
+                                <img src="babel/babel_titlescreen.PNG" class="card-img-top rounded" alt="babel titlescreen screenshot">
                                 <div class="card-body">
-                                    <h5 class="card-title">Project title</h5>
+                                    <h5 class="card-title">Babel</h5>
                                     <h6 class="card-text shortdes">Game Jam Submission</h6>
                                     <p class="card-text">A visual novel for NorthEastern's 48 hours Slice of Jam 2023. Developed in team of 5.
                                 </p>
@@ -100,7 +122,7 @@
                     <div class = "col-sm-4">
                         <div class = "project">
                             <div class="card" id = "giftme">
-                                <img src="giftmesample.PNG" class="card-img-top" alt="GiftMe! App Screenshot">
+                                <img src="giftme/giftmesample.PNG" class="card-img-top" alt="GiftMe! App Screenshot">
                                 <div class="card-body">
                                     <h5 class="card-title">GiftMe! Mobile App</h5>
                                     <h6 class="card-text shortdes">Android App</h6>
@@ -116,7 +138,7 @@
                     <div class = "col-sm-4">
                     <div class = "project">
                         <div class="card" id = "toyhouse">
-                            <img src="toyhousecode_sample.PNG" class="card-img-top" alt="ToyhouseCode Sample Screenshot">
+                            <img src="toyhouse/toyhousecode_sample.PNG" class="card-img-top" alt="ToyhouseCode Sample Screenshot">
                             <div class="card-body">
                                 <h5 class="card-title">Character Profiles</h5>
                                 <h6 class="card-text shortdes">Toyhouse Codes</h6>
@@ -131,8 +153,8 @@
                     <!--Project-->
                     <div class = "col-sm-4">
                         <div class = "project">
-                            <div class="card" id = "CustomWebsite">
-                                <img src="odysseaaboutsnip.PNG" class="card-img-top" alt="Website Sample Screenshot">
+                            <div class="card" id = "odyssea">
+                                <img src="odyssea/odysseaaboutsnip.PNG" class="card-img-top" alt="Website Sample Screenshot">
                                 <div class="card-body">
                                     <h5 class="card-title">Custom Website</h5>
                                     <h6 class="card-text shortdes">Website</h6>
@@ -163,14 +185,15 @@
     <script>
         
         //reference: https://stackoverflow.com/questions/43042901/javascript-click-event-handler-fires-without-clicking
-        document.getElementById("babel").addEventListener("click", function (){openPage("https://splitsuns.itch.io/babel");});
-        document.getElementById("giftme").addEventListener("click", function (){openPage("https://github.com/AlAuB/GiftMe");});
+        document.getElementById("babel").addEventListener("click", function (){openPage("babel");});
+        document.getElementById("giftme").addEventListener("click", function (){openPage("giftme");});
+        document.getElementById("odyssea").addEventListener("click", function (){openPage("odyssea");});
 
         
         function openPage(pgName) {
-            // const mainLink = ".html"
-            // const url = pgName.concat(mainLink);
-            const url = pgName;
+            const mainLink = ".html"
+            const url = pgName.concat(mainLink);
+            // const url = pgName;
             window.open(url, "_self")
         }
         </script>

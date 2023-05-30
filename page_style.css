@@ -5,6 +5,11 @@ body {
     color: #1D1E26;
 }
 
+.heading{
+    display: flex;
+    justify-content: space-between;
+}
+
 h3 {
     font-weight: 500;
     color: #B1647A;
@@ -33,14 +38,60 @@ h3 {
     color: #B1647A;
 }
 
+.btnLink{
+    color: #B1647A;
+    background-color: #F8FAFA;
+    /* border-style: solid;
+    border-color: #B1647A;; */
+    padding: 3px;
+    height: 35px;
+    display: inline-flex;
+    align-items: center;
+    overflow:hidden;
+    width: auto;
+    max-width: 32px; 
+    -webkit-transition: max-width 0.5s;
+    transition: max-width 0.5s;
+}
+
+  .btnLink:hover {
+    max-width: 200px;
+  }
+  
+  .icon {
+    font-size: 25px;
+    margin-right: 5px;
+    padding: 0px 2px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .btnText {
+    color: #B1647A;
+    white-space: nowrap;
+    font-size: 18px;
+    padding-right: 5px;
+    font-variant: small-caps;
+  }
+
+
 .techn p{
-    text-transform: uppercase;
-    margin-bottom: 0px;
+    margin-bottom: 0px; 
 }
 
 .shortdes{
     font-weight: bold;
     text-transform: uppercase;
+}
+
+.desLabel{
+    font-weight: bolder;
+}
+
+.align-center {
+    text-align: center; 
+    margin: auto;
+    margin-bottom: 15px;
 }
 
 .imagesCover{

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8"></meta>
+        <title>Tiffany's Portfolio | Babel</title>
+
+        <!-- Boostrap CSS only -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+        <!--FontAwesome-->
+        <script src="https://kit.fontawesome.com/3e81c20759.js" crossorigin="anonymous"></script>
+        <!-- my css link-->
+        <link rel="stylesheet" type="text/css" href="page_style.css">
+
+        <!--font options: https://fonts.google.com/
+        https://fonts.google.com/specimen/Nunito-->
+    </head>
+
+    <body>
+
+        <div id="main">
+
+            <!--About-->
+
+            <!--heading-->
+            <h1 style="font-weight: bold; font-variant: small-caps; color: #B1647A" class="heading">Babel
+                <a href="index.html" class="btn btn-lg btnLink">
+                    <span class="icon"><i class="fa-solid fa-house isPink float-right"></i> </span>
+                    <span class="btnText">Home</span>
+                </a>
+            </h1>
+            <h6 style="color: #1D1E26;" class="shortdes"> Visual Novel Game</h6>
+            <h6 style="color: #1D1E26;" class="shortdes"> APR 2023</h6>
+            <div> <!-- short descr-->
+                <p>
+                    A visual novel made for Northeastern University's Slice of Jam 2023.
+                    <br>
+                    <span class="isPink">Team:</span>
+                     Tiffany Chen, Lesley Chen, Alex Ouyang, Prima Sun, Eddie Jones
+                </p>
+            </div> <!--short descr end-->
+    
+            <!--Links-->
+            <!--add in some icons-->
+            <div class="info">
+                <a href="https://splitsuns.itch.io/babel" class="btn btn-lg btnLink">
+                    <span class="icon"><i class="fa-brands fa-itch-io isPink"></i> </span>
+                    <span class="btnText">Itch.io link</span>
+                </a>
+
+                <a href="mailto: tchen556@bu.edu" class="btn btn-lg btnLink">
+                    <span class="icon"><i class="fa-solid fa-envelope isPink"></i> </span>
+                    <span class="btnText">Contact Me!</span>
+                </a>
+            </div>   
+           
+            <hr>
+            <!--Images/Screenshots-->
+            <img src="babel/babel_titlescreen.PNG" alt="titlescreen" class="imagesCover"> 
+
+            <hr>
+            <!--More Description-->
+            <h3>About This Project</h3>
+            <p> Babel is a visual novel game made within 48 hours based on the theme "Rebirth." 
+                You awaken and explore an abandoned luxury space cruise as Babel,  
+                an AI customer agent. As you explore, you regain your lost memories and try to make sense of what happened.
+            </p>
+
+            <h6 class="desLabel isPink"> Programmer & Artist</h6>
+            <p> I designed two of the characters in the game and drew their game sprites. 
+                I explored coding various features in Ren'Py, such as a lock restriction on a room unless all other rooms have been visited,
+                and character motions, such as jump/bounce to provide a more immersive playing experience. </p>
+
+            <div class = "align-center">
+                <img src="babel/navigation_restriction.gif" alt="naviation restriction" style="width: 700px; height: 400px">
+                <img src="babel/noah_jump.gif" alt="noah sprite jump" style="width: 700px; height: 400px">
+                <img src="babel/kaine_screenshot.png" alt="kaine screenshot" style="width: 700px; height: 400px">
+
+            </div>
+
+            <div class="techn">
+                <h3>Technologies</h3>
+                <ul>
+                    <li>Python</li>
+                    <li>Ren'Py </li>
+                    <li>Paint Tool Sai 2</li>
+                </ul>
+            </div>
+
+
+
+
+
+            
+            <!--Projects end-->
+
+        </div> <!--main end-->
+
+    </body>
+
+    <footer>
+        <!--Copyright/Credit Statement-->
+        ©Tiffany X. Chen. All Rights Reserved.
+    </footer>
+
+    <script>
+        
+        //reference: https://stackoverflow.com/questions/43042901/javascript-click-event-handler-fires-without-clicking
+        document.getElementById("babel").addEventListener("click", function (){
+                openPage("babel");
+                });
+        
+        function openPage(pgName) {
+            const mainLink = ".html"
+            const url = pgName.concat(mainLink);
+            window.open(url, "_self")
+        }
+        </script>
+
+</html>

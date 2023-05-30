@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8"></meta>
+        <title>Tiffany's Portfolio | GiftMe!</title>
+
+        <!-- Boostrap CSS only -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+        <!--FontAwesome-->
+        <script src="https://kit.fontawesome.com/3e81c20759.js" crossorigin="anonymous"></script>
+        <!-- my css link-->
+        <link rel="stylesheet" type="text/css" href="page_style.css">
+
+        <!--font options: https://fonts.google.com/
+        https://fonts.google.com/specimen/Nunito-->
+    </head>
+
+    <body>
+
+        <div id="main">
+
+            <!--About-->
+
+            <!--heading-->
+            <h1 style="font-weight: bold; font-variant: small-caps; color: #B1647A" class="heading">GiftMe! Mobile App
+
+                <a href="index.html" class="btn btn-lg btnLink">
+                    <span class="icon"><i class="fa-solid fa-house isPink float-right"></i> </span>
+                    <span class="btnText">Home</span>
+                </a>
+            </h1>
+            <h6 style="color: #1D1E26;" class="shortdes"> Android App</h6>
+            <h6 style="color: #1D1E26;" class="shortdes"> Oct – Dec 2022</h6>
+            <div> <!-- short descr-->
+                <p>
+                    GiftMe! is an android app built for CS501 E1 Mobile App Practicum FALL 2022 at Boston University. 
+                    <br>
+                    <span class="isPink">Developers:</span>
+                     Tiffany Chen, Lesley Chen, Jinpeng Lyu, Alex Wang, Nick Lee, Zizhuang (Tim) Guo
+                </p>
+            </div> <!--short descr end-->
+    
+            <!--Links-->
+            <!--add in some icons-->
+            <div class="info">
+
+                <a href="https://github.com/AlAuB/GiftMe" class="btn btn-lg btnLink">
+                    <span class="icon"><i class="fa-brands fa-square-github isPink"></i> </span>
+                    <span class="btnText">GiftMe! Github</span>
+                </a>
+
+                <a href="mailto: tchen556@bu.edu" class="btn btn-lg btnLink">
+                    <span class="icon"><i class="fa-solid fa-envelope isPink"></i> </span>
+                    <span class="btnText">Contact Me!</span>
+                </a>
+            </div>   
+           
+            <hr>
+            <!--Images/Screenshots-->
+            <img src="giftme/giftmesample.PNG" alt="titlescreen" class="imagesCover"> 
+
+            <hr>
+            <!--More Description-->
+            <h3>About This Project</h3>
+
+            <p> GiftMe! is a wishlist app for personal events and holidays that allows users to create a wishlist of items they want to receive for specific occasions.
+                 Users can send out a wishlist link to their friends and family to let them see the possible gift options, which friends & family can 
+                access as guests without having to create an account. Friends & family can see which items have been claimed and can claim the gift they want to give.</p>
+
+
+            <h6 class="desLabel isPink"> Designer & Developer</h6>
+
+            <p>This project was developed in weekly sprints with a deliverable & presentation due every week. 
+                The preliminary design and features of the app was simulated using Figma. </p>
+            
+            <div class = "align-center">
+                <img style="max-width: 400px;" src="giftme/giftme_sampledesign.PNG">
+                <img style="max-width: 500px;"src="giftme/giftme_sampleprototype.gif">
+            </div>
+ 
+            <h6 class="desLabel isPink"> UI Layout</h6>
+            <p>I coded some of the ui for viewing the wishlists and items: wishlist specific screen, view friends' collections, specific item screen.</p>
+            <div class = "align-center">
+                <img src="giftme/wishlistspecficscreen.PNG" alt="wishlist specific screen" style="max-width: 400px; height: 400px">
+                <img src="giftme/friendswishlists.PNG" alt="friends' wishlists" style="height: 400px">
+                <img src="giftme/specifcitemscreen.PNG" alt="specific item screen" style="height: 400px">
+            </div>
+         
+            <h6 class="desLabel isPink"> Features</h6>
+            <p>Some features I worked on that allows the user to interact with the wishlists and items.</p>
+            <div class = "align-center">
+                <iframe src="https://drive.google.com/file/d/1QHgdroUNSvh8UGWXZgr-vDEMcQjUbpQ8/preview" width="640" height="480" allow="autoplay"></iframe>
+                <iframe src="https://drive.google.com/file/d/10moVx2ChqLl3K_fAjD4QwKskCA2pgZGR/preview" width="640" height="480" allow="autoplay"></iframe>
+    
+            </div>
+
+            <div class="techn">
+                <h3>Technologies</h3>
+                <p>Below is a list of technologies I utilised while working on this project.</p>
+
+                <p class="desLabel isPink">Languages</p>
+                <ul>
+                    <li>Java</li>
+                    <li>XML</li>
+                    <li>SQLite</li>
+                </ul>
+
+                <p class="desLabel isPink">APIs</p>
+                <ul>
+                    <li>FireStore Database as data storage</li>
+                    <li>Firebase Dynamic Links to generate links to firestore collections</li>
+                </ul>
+
+                <p class="desLabel isPink">Software</p>
+                <ul>
+                    <li>Figma</li>
+                    <li>Android Studio</li>
+                </ul>
+            </div>
+
+            <!--Projects end-->
+
+        </div> <!--main end-->
+
+    </body>
+
+    <footer>
+        <!--Copyright/Credit Statement-->
+        ©Tiffany X. Chen. All Rights Reserved.
+    </footer>
+
+    <script>
+        
+        //reference: https://stackoverflow.com/questions/43042901/javascript-click-event-handler-fires-without-clicking
+        document.getElementById("babel").addEventListener("click", function (){
+                openPage("babel");
+                });
+        
+        function openPage(pgName) {
+            const mainLink = ".html"
+            const url = pgName.concat(mainLink);
+            window.open(url, "_self")
+        }
+        </script>
+
+</html>
