@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8">
+        <title>Tiffany | Fun Calculator</title>
+        <link rel="stylesheet" type="text/css" href="calc.css"> 
+        <script src="calcScript.js"></script>
+    </head>
+
+    <body>
+        <div id="main">
+            <div id = "calc">
+    
+                <p id="showNums"> </p>
+
+                <div id = "keypad">
+                    <div id = "numPad">
+                        <button type="button" value = "0" onclick="doCalc(this.value)"> 0 </button>
+                        <button type="button" value = "1" onclick="doCalc(this.value)"> 1 </button>
+                        <button type="button" value = "2" onclick="doCalc(this.value)"> 2 </button>
+                        <button type="button" value = "3" onclick="doCalc(this.value)"> 3 </button>
+                        <button type="button" value = "4" onclick="doCalc(this.value)"> 4 </button>
+                        <button type="button" value = "5" onclick="doCalc(this.value)"> 5 </button>
+                        <button type="button" value = "6" onclick="doCalc(this.value)"> 6 </button>
+                        <button type="button" value = "7" onclick="doCalc(this.value)"> 7 </button>
+                        <button type="button" value = "8" onclick="doCalc(this.value)"> 8 </button>
+                        <button type="button" value = "9" onclick="doCalc(this.value)"> 9 </button>
+                    </div>
+                    
+                    <div id = "operations">
+                        <button type="button" value = "+" onclick="doCalc(this.value)"> + </button>
+                        <button type="button" value = "-" onclick="doCalc(this.value)"> - </button>
+                        <button type="button" value = "*" onclick="doCalc(this.value)"> * </button>
+                        <button type="button" value = "/" onclick="doCalc(this.value)"> / </button>
+                        <button type="button" value = "=" onclick="doSolve()"> = </button>
+                        <button type="button" value = "C" onclick="doClear()"> C </button>
+        
+                    </div>
+                </div>
+
+            </div>
+
+        </div>        
+    </body>
+
+</html>

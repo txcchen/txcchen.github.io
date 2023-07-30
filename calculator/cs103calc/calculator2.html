@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>CS103 Tiffany | Multi-Function Online Calculator</title>
+	<link rel="stylesheet" type="text/css" href="calc.css">
+
+	<script>
+		function doAdd(){
+			let sum;
+			let input1;
+			let input2;
+			input1 = document.getElementById("box1").value; 
+			input1 = Number(input1);
+
+			input2 = document.getElementById("box2").value;
+			input2 = Number(input2);
+
+			sum = input1 + input2;
+			document.getElementById("box3").innerHTML = sum;
+			if (sum < 0){
+				document.getElementById("box3").style.color="red";
+			}
+			if (sum >= 0){
+				document.getElementById("box3").style.color="#895CE1";
+			}
+		}
+
+		function doSubtract(){
+			let diff;
+			let input1;
+			let input2;
+			input1 = document.getElementById("box1").value; 
+			input1 = Number(input1);
+
+			input2 = document.getElementById("box2").value;
+			input2 = Number(input2);
+
+			diff = input1 - input2;
+			document.getElementById("box3").innerHTML = diff;
+			if (diff < 0){
+				document.getElementById("box3").style.color="red";
+			}
+			if (diff >= 0){
+				document.getElementById("box3").style.color="#895CE1";
+			}
+
+		}
+
+		function doMultiply(){
+			let prod;
+			let input1;
+			let input2;
+			input1 = document.getElementById("box1").value; 
+			input1 = Number(input1);
+
+			input2 = document.getElementById("box2").value;
+			input2 = Number(input2);
+
+			prod = input1 * input2;
+			document.getElementById("box3").innerHTML = prod;
+			if (prod < 0){
+				document.getElementById("box3").style.color="red";
+			}
+			if (prod >= 0){
+				document.getElementById("box3").style.color="#895CE1";
+			}
+			
+		}
+		function doDivide(){
+			let quot;
+			let input1;
+			let input2;
+			input1 = document.getElementById("box1").value; 
+			input1 = Number(input1);
+
+			input2 = document.getElementById("box2").value;
+			input2 = Number(input2);
+
+			quot = input1 / input2;
+			document.getElementById("box3").innerHTML = quot;
+			if (quot < 0){
+				document.getElementById("box3").style.color="red";
+			}
+			if (quot >= 0){
+				document.getElementById("box3").style.color="#895CE1";
+			}
+					
+		}
+		function doPowers(){
+			let pow = 1;
+			let input1;
+			let input2;
+			input1 = document.getElementById("box1").value; 
+			input1 = Number(input1);
+
+			input2 = document.getElementById("box2").value;
+			input2 = Number(input2);
+
+			for (var i = 0; i < input2; i++) {
+				pow = pow * input1;
+			}
+			document.getElementById("box3").innerHTML= pow;
+
+			if (pow < 0){
+				document.getElementById("box3").style.color="red";
+			}
+			if (pow >= 0){
+				document.getElementById("box3").style.color="#895CE1";
+			}
+			
+		}
+
+		function doClear(){
+			document.getElementById("box1").value = "";
+			document.getElementById("box2").value = "";
+			document.getElementById("box3").innerHTML = "";
+		}
+
+
+	</script>
+</head>
+<body>
+	<div id="main">
+		<div id="shape"> 
+			<h1> Calculator </h1>
+			<input id="box1" type="text" value="">
+		 	<br>
+			<input id="box2" type="text" value="">
+			<br>
+		 
+			<div id="operations">
+				<button type="button" onclick="doAdd()"> + </button>
+				<button type="button" onclick="doSubtract()"> - </button>
+				<button type="button" onclick="doMultiply()"> * </button>
+				<button type="button" onclick="doDivide()"> / </button>
+				<button type="button" onclick="doPowers()"> ^ </button>
+			</div>
+
+		 	<p id="box3"> </p>
+
+		 	<br>
+		 	<button id="clear" type="button" onclick="doClear()"> Clear </button>
+		</div>
+	</div> 
+
+
+
+</body>
+</html>
