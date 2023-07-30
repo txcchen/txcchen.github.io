@@ -27,11 +27,13 @@ function doCalc(val){
         else{
             if(num2){
                 num2 += val;
+                express += val;
             }
             else{
                 num2 = val
+                express += num2;
             }
-            express += num2;
+            
             document.getElementById("showNums").innerHTML = express;
         }
     }
