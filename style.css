@@ -4,7 +4,11 @@ body {
     text-align: left;
     background-color: #F8FAFA;
     color: #1D1E26;
+
+    animation: fadeIn; /* referring directly to the animation's @keyframe declaration */
+    animation-duration: 2.5s; /* don't forget to set a duration! */
 }
+
 
 .heading{
     display: flex;
@@ -79,6 +83,7 @@ h3 {
 
 /* https://www.impressivewebs.com/animating-css3-gradients/ */
 .project .card{
+    height: 330px;
     border: 0;
     border-radius: 5%;
     padding: 0.5em;

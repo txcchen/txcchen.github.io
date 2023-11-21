@@ -4,6 +4,9 @@ body {
     text-align: left;
     background-color: #F8FAFA;
     color: #1D1E26;
+    
+    animation: fadeIn; /* referring directly to the animation's @keyframe declaration */
+    animation-duration: 2.5s; /* don't forget to set a duration! */
 }
 
 .heading{
@@ -97,7 +100,7 @@ h3 {
 
 .imagesCover{
     width: 1000px;
-    height: 400px;
+    height: 500px;
     object-fit: cover;
 }
 

@@ -11,6 +11,8 @@
         <script src="https://kit.fontawesome.com/3e81c20759.js" crossorigin="anonymous"></script>
         <!-- my css link-->
         <link rel="stylesheet" type="text/css" href="style.css">
+        <!-- animate.css -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 
         <!--font options: https://fonts.google.com/
         https://fonts.google.com/specimen/Nunito-->
@@ -22,7 +24,6 @@
 
             <!--heading-->
             <h1 style="font-weight: bold; font-variant: small-caps; color: #B1647A" class="heading">Hi! I'm Tiffany
-
                 <a href="index.html" class="btn btn-lg btnLink">
                     <span class="icon"><i class="fa-solid fa-house isPink float-right"></i> </span>
                     <span class="btnText">Home</span>
@@ -77,12 +78,12 @@
             
             <!--Projects-->
             <h3> Projects</h3>
-            <p> some projects I worked on</p>
+            <!-- <p> Here are some projects I worked on - academic, extracurrcular, and personal.</p> -->
 
 
             <!--Column-->
             <div class="col"> 
-                    
+                
                 <!--row 1-->
                 <div class="row">
                     
@@ -101,11 +102,25 @@
                         </div>
                     </div> -->
                     <!--Project End-->
+                        <!--Project-->
+                        <div class = "col-sm-4">
+                            <div class = "project">
+                                <div class="card" id = "workshop" onclick="openPage(this.id)">
+                                    <img src="workshop/userDashboard.PNG" class="card-img-top rounded" alt="workshop preview">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Workshop</h5>
+                                        <h6 class="card-text shortdes">Personal Project</h6>
+                                        <p class="card-text">A Project Management Web Application</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--ProjectEnd-->
 
                     <!--Project-->
                     <div class = "col-sm-4">
                         <div class = "project">
-                            <div class="card" id = "calculator">
+                            <div class="card" id = "calculator" onclick="openPage(this.id)">
                                 <img src="calculator/calculators_preview.jpg" class="card-img-top rounded" alt="calculators preview">
                                 <div class="card-body">
                                     <h5 class="card-title">Simple Calculator</h5>
@@ -120,7 +135,7 @@
                     <!--Project-->
                     <div class = "col-sm-4">
                         <div class = "project">
-                            <div class="card" id = "babel">
+                            <div class="card" id = "babel" onclick="openPage(this.id)">
                                 <img src="babel/babel_titlescreen.PNG" class="card-img-top rounded" alt="babel titlescreen screenshot">
                                 <div class="card-body">
                                     <h5 class="card-title">Babel</h5>
@@ -133,10 +148,15 @@
                     </div>
                     <!--ProjectEnd-->
 
+                </div> <!--row 1 end-->
+
+
+                <!-- row 2-->
+                <div class = "row">
                     <!--Project-->
                     <div class = "col-sm-4">
                         <div class = "project">
-                            <div class="card" id = "giftme">
+                            <div class="card" id = "giftme" onclick="openPage(this.id)">
                                 <img src="giftme/giftmesample.PNG" class="card-img-top" alt="GiftMe! App Screenshot">
                                 <div class="card-body">
                                     <h5 class="card-title">GiftMe! Mobile App</h5>
@@ -149,15 +169,10 @@
                     </div>
                     <!--Project End-->
 
-                </div> <!--row 1 end-->
-
-
-                <!-- row 2-->
-                <div class = "row">
                     <!--Project-->
                     <div class = "col-sm-4">
                         <div class = "project">
-                            <div class="card" id = "toyhouse">
+                            <div class="card" id = "toyhouse" onclick="openPage(this.id)">
                                 <img src="toyhouse/user_simple.PNG" class="card-img-top" alt="ToyhouseCode Sample Screenshot">
                                 <div class="card-body">
                                     <h5 class="card-title">User & Character Profiles</h5>
@@ -173,7 +188,7 @@
                     <!--Project-->
                     <div class = "col-sm-4">
                         <div class = "project">
-                            <div class="card" id = "odyssea">
+                            <div class="card" id = "odyssea" onclick="openPage(this.id)">
                                 <img src="odyssea/odysseaaboutsnip.PNG" class="card-img-top" alt="Website Sample Screenshot">
                                 <div class="card-body">
                                     <h5 class="card-title">Custom Website</h5>
@@ -203,11 +218,12 @@
     <script>
         
         //reference: https://stackoverflow.com/questions/43042901/javascript-click-event-handler-fires-without-clicking
-        document.getElementById("babel").addEventListener("click", function (){openPage("babel");});
-        document.getElementById("giftme").addEventListener("click", function (){openPage("giftme");});
-        document.getElementById("odyssea").addEventListener("click", function (){openPage("odyssea");});
-        document.getElementById("toyhouse").addEventListener("click", function (){openPage("toyhouse");});
-        document.getElementById("calculator").addEventListener("click", function (){openPage("calculator");});
+        // document.getElementById("babel").addEventListener("click", function (){openPage("babel");});
+        // document.getElementById("giftme").addEventListener("click", function (){openPage("giftme");});
+        // document.getElementById("odyssea").addEventListener("click", function (){openPage("odyssea");});
+        // document.getElementById("toyhouse").addEventListener("click", function (){openPage("toyhouse");});
+        // document.getElementById("calculator").addEventListener("click", function (){openPage("calculator");});
+        // document.getElementById("calculator").addEventListener("click", function (){openPage("workshop");});
 
         
         function openPage(pgName) {
