@@ -65,9 +65,11 @@
             <!--More Description-->
             <h3>About This Project</h3>
             <p>This project is a web application developed with the MERN tech stack that allows users to manage various projects that involve multiple participants 
-                and project check-ins via a project dashboard, titled [Workshop].
+                and streamlines the check-in process via a project dashboard and custom submission form, titled [Workshop]. 
             </p>
-            <p>So far Workshop is hosted locally but my goal is to deploy the website online for people to use. </p>
+            <p>I have completed a prototype of the application deployed with Render.com</p>
+            <p><span class="desLabel isPink">Demo - Home Page</span><a href="https://workshop-ij3r.onrender.com">https://workshop-ij3r.onrender.com</a></p>
+            <p><span class="desLabel isPink">Demo - A Project Page</span><a href="https://workshop-ij3r.onrender.com/project/65fc5cd7b27e61474e7aca99">Spring Art Exchange 2024 Sample Page</a></p>
 
             <h6 class="desLabel isPink"> Designer & Developer</h6>
             
@@ -78,7 +80,7 @@
             Moderators are required to check and make sure that each participant has submitted a progress check at those times.
             </p>
             <p>
-            Last year, I was one of the moderators for my friend's Secret Santa Art Exchange. We kept track of the participants and progress checks with 
+            Previously, I was one of the moderators for my friend's Secret Santa Art Exchange. We kept track of the participants and progress checks with 
             Google Spreadsheets and had participants submit their work-in-progress (WIP) via a Google Form. We would then go through each form and check it off on the spreadsheet.
             At the time, I thought <span style="font-style: italic;">It would be convenient if the form directly linked to the spreadsheet so that the artist's WIP is automatically linked.</span>
             This would make it easier to manage the art exchange and also minimize human-error of possibly checking off the wrong person. 
@@ -107,9 +109,8 @@
             <p>The submission form is for the moderator to share with the participants for the participants to fill out. Once submitted,
                 the participant's progress will be updated in the project page. 
             </p>
-            <p>The submission form uses the projectId as part of its link to access the project information in the database, allowing
-                the form to display the roles and tasks the participant is submitting for. 
-                The projectId and participant name are used to access and update a participant's information in the database.</p>
+            <p><span class="desLabel isPink">Demo - Submission Form</span><a href="https://workshop-ij3r.onrender.com/form/65fc5cd7b27e61474e7aca99">Spring Art Exchange 2024 Submission Page</a></p>
+            <p>Feel free to submit your progress if you are artist1, artist2, or artist3 and return to the demo project page linked above to see updates. Note that updates may be slow due to Render's free tier.</p>
             <div class = "align-center">
                 <img src="workshop/submissionForm.PNG" alt="submission form" style="width: 700px; height: 400px">
             </div>
@@ -125,8 +126,8 @@
                 <img src="workshop/database.gif" alt="database" style="width: 700px; height: 400px; object-fit: contain;">
             </div>
 
-            <h6 class="desLabel isPink">Demo</h6>
-            <p>This is a prototype of Workshop hosted locally. In the demo, the user shows the home page for nonlogged in users, the project dashboard, creates a new project, edits the project, creates new roles, tasks, and adds participants to a project.
+            <h6 class="desLabel isPink">Demo - Local</h6>
+            <p>This is a video of Workshop hosted locally. In the demo, the user shows the home page for nonlogged in users, the project dashboard, creates a new project, edits the project, creates new roles, tasks, and adds participants to a project.
                 The submission form is also shown to demonstrate how it updates participant progress.
             </p>
             <div class="align-center">
@@ -134,11 +135,10 @@
             </div>
 
             <h6 class="desLabel isPink">Reflection & Future</h6>
-            <p>I learned how to develop a web application using MERN and managed to implement a lot of features.
-                There are various details I would like to reconsider, such as restructuring the database so that Roles can be linked to the Tasks belonging to that role, 
-                using ContextAPI to access user information instead of prop drilling, and figuring out a way to store images on the cloud instead of locally. I would also like to 
-                add features such as adding collaborators/other moderators and making the project page publicly viewable/sharable for projects that don't require the art pieces to be private before the deadline.
-                My goal is to deploy Workshop and have it actually be usable to manage art projects, but before then, I need to do more research and more coding!
+            <p>I learned how to develop a web application using MERN and managed to implement useful features.
+                Next, I will be improving the application, with to-dos including redesigning the UI, restructuring the database so that Roles can be linked to the Tasks belonging to that role, 
+                using ContextAPI to access user information instead of prop drilling and add features such as adding collaborators/other moderators and making the project page publicly viewable/sharable for projects that don't require the art pieces to be private before the deadline.
+                My goal is to have Workshop be usable to manage art projects.
             </p>
 
             <div class="techn">
@@ -148,6 +148,8 @@
                     <li>Node</li>
                     <li>Express</li>
                     <li>MongoDB</li>
+                    <li>Google Cloud Storage</li>
+                    <li>Render</li>
                 </ul>
             </div>
             
