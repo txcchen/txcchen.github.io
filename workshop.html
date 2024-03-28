@@ -2,166 +2,187 @@
 
 <html lang="en">
     <head>
-        <meta charset="utf-8"></meta>
-        <title>Tiffany's Portfolio | Workshop</title>
+        <meta charset="utf-8"/>
+        <title>Tiffany | Workshop</title>
 
+        <!-- link to CSS -->
+        <link rel="stylesheet" type="text/css" href="style.css">
         <!-- Boostrap CSS only -->
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
         <!--FontAwesome-->
         <script src="https://kit.fontawesome.com/3e81c20759.js" crossorigin="anonymous"></script>
-        <!-- my css link-->
-        <link rel="stylesheet" type="text/css" href="page_style.css">
-       <!-- animate.css -->
-       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
-        <!--font options: https://fonts.google.com/
-        https://fonts.google.com/specimen/Nunito-->
     </head>
 
     <body>
+        <div class="project-main">
+            <!-- Navbar -->
+            <!-- Name, About, Project Tabs -->
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="index.html">Tiffany Chen</a>
+                    <div class="navbar-nav">
+                        <!-- <a class="nav-link active" aria-current="page" href="#">Home</a> -->
+                        <a class="nav-link" href="mailto:tchen556@bu.edu"><i class="fa-regular fa-envelope fa-lg"></i></a>
+                        <a class="nav-link" href="index.html#projects">Projects</a>
+                    </div>
+                </div>
+              </nav>
 
-        <div id="main">
+            <!-- About this project -->
+            <div class="project-about">
+                <div class="container my-3">
+                    <!-- title of project -->
+                    <h1 class="display-4">Workshop</h1>
+                    <p class="lead">A Project Management Web Application for managing art projects with multiple participants by streamlining the check-in process via a project dashboard and custom submission form. 
+                    </p>
 
-            <!--About-->
-
-            <!--heading-->
-            <h1 style="font-weight: bold; font-variant: small-caps; color: #B1647A" class="heading">Workshop
-
-                <a href="index.html" class="btn btn-lg btnLink">
-                    <span class="icon"><i class="fa-solid fa-house isPink float-right"></i> </span>
-                    <span class="btnText">Home</span>
-                </a>
-            </h1>
-            <h6 style="color: #1D1E26;" class="shortdes"> Personal Project</h6>
-            <h6 style="color: #1D1E26;" class="shortdes"> Sept - Nov 2023</h6>
-        
-            <div> <!-- short descr-->
-                <p>
-                    Project Management Web Application intended for managing art projects involving multiple participants.
-                    <br>
-                    <span class="isPink">Developer:</span>
-                     Tiffany Chen
-                </p>
-            </div> <!--short descr end-->
+                    <!-- project-basic-info -->
+                    <div class="project-basic-info">
+                        <dl class="row smaller-text">
+                            <!-- bootstrap description list alignment -->
+                            <dt class="col-3">Role</dt>
+                            <dd class="col-9">Designer & Developer</dd>
     
-            <!--Links-->
-            <!--add in some icons-->
-            <div class="info">
-                <a href="https://github.com/txcchen" class="btn btn-lg btnLink">
-                    <span class="icon"><i class="fa-brands fa-square-github isPink"></i> </span>
-                    <span class="btnText">My Github</span>
-                </a>
+                            <dt class="col-3">Date</dt>
+                            <dd class="col-9">September 2023 - March 2024</dd>
 
-                <a href="mailto: tchen556@bu.edu" class="btn btn-lg btnLink">
-                    <span class="icon"><i class="fa-solid fa-envelope isPink"></i> </span>
-                    <span class="btnText">Contact Me!</span>
-                </a>
-            </div>   
-           
-            <hr>
-            <!--Images/Screenshots-->
-            <img src="workshop/userDashboard.PNG" alt="titlescreen" class="imagesCover"> 
+                            <dt class="col-3">Technologies</dt>
+                            <dd class="col-9">React, Node, Express, MongoDB, Google Cloud Storage, Render</dd>
+                        </dl>
+                    </div>
 
-            <hr>
-            <!--More Description-->
-            <h3>About This Project</h3>
-            <p>This project is a web application developed with the MERN tech stack that allows users to manage various projects that involve multiple participants 
-                and streamlines the check-in process via a project dashboard and custom submission form, titled [Workshop]. 
-            </p>
-            <p>I have completed a prototype of the application deployed with Render.com</p>
-            <p><span class="isPink">Demo: </span><a href="https://workshop-ij3r.onrender.com">Workshop Home Page</a> <br>
-                <span class="isPink">Demo - A Project Page: </span><a href="https://workshop-ij3r.onrender.com/project/65fc5cd7b27e61474e7aca99">Spring Art Exchange 2024 Sample Page</a></p>
+                    <!-- Project Links -->
+                    <div class="project-links">
+                        <div class="icons">
+                            <!-- github link if project has one -->
+                            <a href="https://github.com/txcchen" class="link-style"><i class="fa-brands fa-square-github fa-xl fa-bounce-hover"></i></a>
+                        </div>
+                        
+                        <p class="smaller-text">
+                            <!-- demo link -->
+                            <a href="https://workshop-ij3r.onrender.com/" class="link-style link-underline">Demo Home Page</a> |
+                            <a href="https://github.com/txcchen" class="link-style link-underline">Demo Project Page</a>
 
-            <h6 class="desLabel isPink"> Designer & Developer</h6>
-            
-            <p> Workshop is intended for artists to more easily manage art projects as the project organizer or moderator.</p>
-            <h6 class="desLabel isPink"> Inspiration & Problem Definition</h6>
-            <p>I have participated in Secret Santa Art Exchanges as an artist and also as a moderator. 
-             For these art exchanges, participating artists are required to submit progress checks on pre-determined deadline dates to ensure that they are working on their art piece.
-            Moderators are required to check and make sure that each participant has submitted a progress check at those times.
-            </p>
-            <p>
-            Previously, I was one of the moderators for my friend's Secret Santa Art Exchange. We kept track of the participants and progress checks with 
-            Google Spreadsheets and had participants submit their work-in-progress (WIP) via a Google Form. We would then go through each form and check it off on the spreadsheet.
-            At the time, I thought <span style="font-style: italic;">It would be convenient if the form directly linked to the spreadsheet so that the artist's WIP is automatically linked.</span>
-            This would make it easier to manage the art exchange and also minimize human-error of possibly checking off the wrong person. 
-            </p>
-            <p>So this year, I decided to create a web application that will do just that - manage art projects. </p>
+                            <br>
+                            <span class="color-text">Note: please wait a few seconds for Render to start up the backend</span>
+                        </p>
+                    </div>
+                </div>
 
-            <p>Keeping in tune with the holiday spirit, the application is named <span class="desLabel isPink">Workshop</span> inspired by Santa's Workshop. 
-            Workshop can manage not only art exchanges (Secret Santas, Valentines Exchanges, etc), it can also be used for managing art zine projects 
-            or any project that requires participants to submit WIPs and progress checks.</p>
+            </div>
+            <!-- About End -->
 
-            <div class = "align-center">
-                <img src="workshop/homepage.gif" alt="homepage" style="width: 700px; height: 400px; object-fit: contain;">
-                <p>Home page for not logged in users. Will be updated to contain more details and infographics.</p>
+            <!-- Singular image showcase -->
+            <div class="project-img-showcase bg-light py-5">
+                <div class="container">
+                    <img src="workshop/homepage.gif" alt="About Workshop">
+                </div>
             </div>
 
-            <h6 class="desLabel isPink">Features</h6>
-            <p>Features of Workshop include:</p>
-            <ul>
-                <li><span class="desLabel isPink">Projects</span> : moderator can create, edit, delete projects - all projects are shown on the dashboard</li>
-                <li><span class="desLabel isPink">Roles</span> : moderator can add and delete roles (e.g "artist", "writer", etc)</li>
-                <li><span class="desLabel isPink">Timeline</span> : moderator can add deadlines/tasks</li>
-                <li><span class="desLabel isPink">Participants</span> : moderator can add and delete participants and assign them a role </li>
-            </ul>
-            <p>Managing all parts of a project is done via the Dashboard or in the project page.</p>
-            <h6 class="desLabel isPink">Submission Form</h6>
-            <p>The submission form is for the moderator to share with the participants for the participants to fill out. Once submitted,
-                the participant's progress will be updated in the project page. 
-            </p>
-            <p><span class="isPink">Demo - Submission Form: </span><a href="https://workshop-ij3r.onrender.com/form/65fc5cd7b27e61474e7aca99"> Spring Art Exchange 2024 Submission Page</a></p>
-            <p>Feel free to submit your progress if you are artist1, artist2, or artist3 and return to the demo project page linked above to see updates. Note that updates may be slow due to Render's free tier.</p>
-            <div class = "align-center">
-                <img src="workshop/submissionForm.PNG" alt="submission form" style="width: 700px; height: 400px">
+            <!-- Concept, Development -->
+            <div class="project-body">
+                <div class="container my-3 py-5">
+                    <h3 class="thin-font">Concept</h3>
+                    <p class="thin-font">
+                        I have participated in Secret Santa Art Exchanges as an artist and also as a moderator, where
+                        we (the mods) kept track of the participants' progress by manually checking off the progress on Google Spreadsheets 
+                        after going through the participants' submitted Google Forms. 
+                    </p>
+                    <p class="thin-font"> 
+                        I decided to develop a web application that automates that check-in process by directly linking a participant's submission via form
+                        to their own log for moderators to check in one place.</p>
+                    
+                    <p class="thin-font"> Keeping in tune with the holiday spirit, the application is named Workshop inspired by Santa's Workshop.</p>
+                </div>
+                <hr>
+                <div class="container my-3 py-5">
+                    <h3 class="thin-font">Development</h3>
+                    <p class="thin-font"> I wanted to practice developing web apps with popular and relevant technologies, so I chose the MERN stack.
+                        After completing a prototype in my local environment, I deployed the prototype with 
+                        <a href="https://render.com/" class="link-style link-underline color-text">Render.com</a>'s free instance.
+                    </p>
+                </div>
             </div>
 
-            <h6 class="desLabel isPink">User Login</h6>
-            <p>I decided to use Google authentication to allow users to log in with their google accounts. This way, I only store the user's Google email and profile picture. </p>
-           
-            <h6 class="desLabel isPink">Database</h6>
-            <p>I used MongoDB to store data. I have 3 models - User, Projects, and Participants. As shown in the gif below, 
-                when the participant submits their progress via the form, the information will be updated in the participant document. 
-                This is also how the Project is updated with tasks and roles.  </p>
-            <div class = "align-center">
-                <img src="workshop/database.gif" alt="database" style="width: 700px; height: 400px; object-fit: contain;">
+            <!-- What I worked on preview -->
+            <div class="project-respons bg-light py-4">
+                <div class="project-body">
+                    <h3 class="thin-font">Features</h3>
+                </div>
+                <div class="container">
+                    <!-- features that I worked on -->
+                    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4 g-4 mt-2">
+                        <div class="col">
+                            <div class="feature card">
+                                <img class="card-img-top feature-image" src="workshop/userDashboard.PNG" alt="dashboard with 3 projects">
+                                <div class="card-body">
+                                    <h5 class="card-title">Project Dashboard</h5>
+                                    <p class="card-text">Users can create, edit, delete projects and all projects are shown on the dashboard.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="feature card">
+                                <img class="card-img-top feature-image" src="workshop/projectpage.gif" alt="scrolling thro project page to show features">
+                                <div class="card-body">
+                                    <h5 class="card-title">Project Page</h5>
+                                    <p class="card-text">The project page is where the User can manage aspects of the project,
+                                        including adding Roles, a Timeline, and Participants. 
+                                        </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="feature card">
+                                <img class="card-img-top feature-image" src="workshop/submissionForm.PNG" alt="sample submission form">
+                                <div class="card-body">
+                                    <h5 class="card-title">Submission Form</h5>
+                                    <p class="card-text">The submission form is shared with the participants for them to fill out.</p>
+                                    <a href="https://workshop-ij3r.onrender.com/form/65fc5cd7b27e61474e7aca99" class="link-style link-underline">Demo Submission Form</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="feature card">
+                                <img class="card-img-top feature-image" src="workshop/participants.gif" alt="showing participants' progress log">
+                                <div class="card-body">
+                                    <h5 class="card-title">Participants Log</h5>
+                                    <p class="card-text">Once the project form is filled out and submitted, the participant's progress will be updated in the project page.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div> <!-- row row-cols div-->
+                </div>
+            </div>
+            <!-- What I worked on end -->
+
+            <!-- Next Steps -->
+            <div class="project-body">
+                <div class="container my-3 py-5">
+                    <h3 class="thin-font">Next Steps</h3>
+                    <p class="thin-font">
+                        Next, I will be improving the application, with to-dos including redesigning the UI, 
+                        restructuring the database so that Roles can be linked to the Tasks belonging to that role, 
+                        adding features such as collaborators/other moderators and 
+                        making the project page publicly viewable/sharable for projects 
+                        that don't require the art pieces to be private before the deadline. 
+                    </p>
+
+                    <div class="mt-5"><i class="fa-solid fa-computer"></i></div>
+                </div>
+
+               
             </div>
 
-            <h6 class="desLabel isPink">Demo - Local</h6>
-            <p>This is a video of Workshop hosted locally. In the demo, the user shows the home page for nonlogged in users, the project dashboard, creates a new project, edits the project, creates new roles, tasks, and adds participants to a project.
-                The submission form is also shown to demonstrate how it updates participant progress.
-            </p>
-            <div class="align-center">
-                <iframe src="https://drive.google.com/file/d/1DDOWglYffsHyxmCNHSNcApAFIlFeNUx_/preview" width="960" height="540" allow="autoplay"></iframe>
-            </div>
-
-            <h6 class="desLabel isPink">Reflection & Future</h6>
-            <p>I learned how to develop a web application using MERN and managed to implement useful features.
-                Next, I will be improving the application, with to-dos including redesigning the UI, restructuring the database so that Roles can be linked to the Tasks belonging to that role, 
-                using ContextAPI to access user information instead of prop drilling and add features such as adding collaborators/other moderators and making the project page publicly viewable/sharable for projects that don't require the art pieces to be private before the deadline.
-                My goal is to have Workshop be usable to manage art projects.
-            </p>
-
-            <div class="techn">
-                <h3>Technologies</h3>
-                <ul>
-                    <li>React</li>
-                    <li>Node</li>
-                    <li>Express</li>
-                    <li>MongoDB</li>
-                    <li>Google Cloud Storage</li>
-                    <li>Render</li>
-                </ul>
-            </div>
-            
-            <!--Projects end-->
-
-        </div> <!--main end-->
-
+            <!-- footer -->
+            <footer>
+                <!--Copyright/Credit Statement-->
+                <div class="container mt-3">
+                    <p class="text-muted"> ©Tiffany X. Chen. All Rights Reserved.</p>
+                </div>
+            </footer>
+        </div> 
+        <!-- main div end -->
     </body>
-
-    <footer>
-        <!--Copyright/Credit Statement-->
-        ©Tiffany X. Chen. All Rights Reserved.
-    </footer>
 
 </html>

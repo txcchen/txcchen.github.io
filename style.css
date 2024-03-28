@@ -1,132 +1,172 @@
-
-body {
-    padding: 20px;
-    text-align: left;
-    background-color: #F8FAFA;
-    color: #1D1E26;
-
-    animation: fadeIn; /* referring directly to the animation's @keyframe declaration */
-    animation-duration: 2.5s; /* don't forget to set a duration! */
+:root{
+    --accent-color:#B1647A;
 }
 
-
-.heading{
-    display: flex;
-    justify-content: space-between;
-}
-
-h3 {
-    font-weight: 500;
-    color: #B1647A;
-    font-variant: small-caps;
+*{
+    padding: 0;
+    margin: 0;
 }
 
 #main {
-   margin: auto;
-   max-width: 1000px;
-   max-height: max-content;
+    margin: auto;
+    max-height: max-content;
+ }
+
+.navbar{
+    padding: 0 20px;
 }
 
-#main h1{
-    margin-top: 50px;
+#about{
+    max-width: 1000px;
+    margin: auto;
+    text-align: center;
+    padding: 88px 0px;
 }
 
-.row{
-    margin-bottom: 1em;
+#skills{
+    max-width: 715px;
+    padding: 0 0 0 10px;
+    margin: auto;
+    text-align: left;
 }
 
-/* .info{
-    font-size: 25px;
-} */
-
-.isPink{
-    color: #B1647A;
+#contact-section{
+    margin-top: 20px;
 }
 
-/* Expand button on hover: https://codepen.io/lucasfads/pen/QWwjGjv*/
-.btnLink{
-    color: #B1647A;
-    background-color: #F8FAFA;
-    /* border-style: solid;
-    border-color: #B1647A;; */
-    padding: 3px;
-    height: 35px;
-    display: inline-flex;
-    align-items: center;
-    overflow:hidden;
-    width: auto;
-    max-width: 32px; 
-    -webkit-transition: max-width 0.5s;
-    transition: max-width 0.5s;
+.icons{
+    margin: 10px;
 }
 
-  .btnLink:hover {
-    max-width: 200px;
-  }
-  
-  .icon {
-    font-size: 25px;
-    margin-right: 5px;
-    padding: 0px 2px;
+.fa-bounce-hover:not(:hover) {
+    animation: none;
+ }
+
+ .fa-bounce-hover:hover{
+    animation: fa-bounce 2s infinite;
+ }
+
+
+.link-basic{
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+ }
+
+.link-basic:hover{
+    color: black;
+    cursor: pointer;
+}
+
+.link-style{
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+}
+
+.link-style:hover{
+    color: var(--accent-color);
+    cursor: pointer;
+}
+
+.link-underline{
+    /* ref: https://css-tricks.com/css-link-hover-effects/ */
+    background: linear-gradient(0deg, var(--accent-color), var(--accent-color)) no-repeat right bottom / 0 2px;
+    transition: background-size 350ms;
+}
+
+.link-underline:hover{
+    cursor: pointer;
+    color: var(--accent-color);
+
+    background-size: 100% 2px;
+    background-position-x: left;
+}
+
+.smaller-text{
+    font-size: 14px;
+}
+
+#projects{
+    margin: auto;
+}
+
+.project{
+    transition: all 0.5s;
+}
+
+.project:hover{
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0,0,0,.12), 0 4px 8px rgba(0,0,0,.06);
+}
+
+.project-image{
+    width: 100%;
+    height: 225px;
+    pointer-events: none;
+}
+
+footer{
+    padding: 50px 0px 10px 0px;
+}
+
+/* ------------------------------------------------------------------------------------------- */
+/* for individual project pages */
+
+.project-main {
+    margin: auto;
+    max-height: max-content;
+ }
+
+.project-brief{
     display: flex;
-    align-items: center;
-  }
-  
-  .btnText {
-    color: #B1647A;
-    white-space: nowrap;
-    font-size: 18px;
-    padding-right: 5px;
-    font-variant: small-caps;
-  }
-
-
-/* https://www.impressivewebs.com/animating-css3-gradients/ */
-.project .card{
-    height: 330px;
-    border: 0;
-    border-radius: 5%;
-    padding: 0.5em;
-    background-color: #1D1E26;
-    color: #F8FAFA;
-    margin-bottom: 10px;;
-    /* background: linear-gradient(#F8FAFA, #B1647A);
-    background-size: 100% 200%; */
-    transition: all 0.5s ease-out;
-}
-.project .card:hover {
-    background-color: #F8FAFA;
-    color:  #1D1E26;
-    border-style: solid;
-    /* border-width: 0.15em; */
-    border-color: #aeb4bd;
 }
 
-.card-title{
-    font-weight: bold;
+.project-about{
+    max-width: 1000px;
+    margin: auto;
+    text-align: center;
+    padding: 88px 0px 10px 0;
 }
 
-.shortdes{
-    font-weight: bold;
-    text-transform: uppercase;
+.project-basic-info{
+    max-width: 500px;
+    text-align: center;
+    margin: auto;
 }
 
-.card-img-top{
-    height: 150px;
-    width: auto;
+.project-img-showcase{
+    object-fit: cover;
+    text-align: center;
+
+}
+
+.project-body{
+    max-width: 1000px;
+    margin: auto;
+    text-align: center;
+}
+
+.thin-font{
+    font-weight: 300;
+}
+
+.feature{
+    height: 400px;
+    transition: all 0.5s;
+}
+
+.feature:hover{
+    box-shadow: 0 10px 20px rgba(0,0,0,.12), 0 4px 8px rgba(0,0,0,.06);
+}
+
+.feature-image{
+    max-width: 100%;
+    height: 225px;
+    pointer-events: none;
     object-fit: cover;
 }
 
-/* footer */
-footer{
-    /* color: white;
-    background-color:#666666; */
-    /* text-align: center; */
-    margin: auto;
-    max-width: 1000px;
-    padding-top: 1em;
-    padding-bottom: 1em;
-    font-size: 15px;
-    background-color: #F8FAFA;
-    color: #1D1E26;
+.color-text{
+    color: var(--accent-color);
 }

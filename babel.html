@@ -2,101 +2,160 @@
 
 <html lang="en">
     <head>
-        <meta charset="utf-8"></meta>
-        <title>Tiffany's Portfolio | Babel</title>
+        <meta charset="utf-8"/>
+        <title>Tiffany | Babel</title>
 
+        <!-- link to CSS -->
+        <link rel="stylesheet" type="text/css" href="style.css">
         <!-- Boostrap CSS only -->
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
         <!--FontAwesome-->
         <script src="https://kit.fontawesome.com/3e81c20759.js" crossorigin="anonymous"></script>
-        <!-- my css link-->
-        <link rel="stylesheet" type="text/css" href="page_style.css">
-       <!-- animate.css -->
-       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
-        <!--font options: https://fonts.google.com/
-        https://fonts.google.com/specimen/Nunito-->
     </head>
 
     <body>
+        <div class="project-main">
+            <!-- Navbar -->
+            <!-- Name, About, Project Tabs -->
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="index.html">Tiffany Chen</a>
+                    <div class="navbar-nav">
+                        <!-- <a class="nav-link active" aria-current="page" href="#">Home</a> -->
+                        <a class="nav-link" href="mailto:tchen556@bu.edu"><i class="fa-regular fa-envelope fa-lg"></i></a>
+                        <a class="nav-link" href="index.html#projects">Projects</a>
+                    </div>
+                </div>
+              </nav>
 
-        <div id="main">
+            <!-- About this project -->
+            <div class="project-about">
+                <div class="container my-3">
+                    <!-- title of project -->
+                    <h1 class="display-4">Babel</h1>
+                    <p class="lead"> A visual novel game made within 48 hours for Northeastern University's Slice of Jam 2023. 
+                    </p>
 
-            <!--About-->
 
-            <!--heading-->
-            <h1 style="font-weight: bold; font-variant: small-caps; color: #B1647A" class="heading">Babel
-                <a href="index.html" class="btn btn-lg btnLink">
-                    <span class="icon"><i class="fa-solid fa-house isPink float-right"></i> </span>
-                    <span class="btnText">Home</span>
-                </a>
-            </h1>
-            <h6 style="color: #1D1E26;" class="shortdes"> Visual Novel Game</h6>
-            <h6 style="color: #1D1E26;" class="shortdes"> APR 2023</h6>
-            <div> <!-- short descr-->
-                <p>
-                    A visual novel made for Northeastern University's Slice of Jam 2023.
-                    <br>
-                    <span class="isPink">Team:</span>
-                     Tiffany Chen, Lesley Chen, Alex Ouyang, Prima Sun, Eddie Jones
-                </p>
-            </div> <!--short descr end-->
+                    <!-- project-basic-info -->
+                    <div class="project-basic-info">
+                        <dl class="row smaller-text">
+                            <!-- bootstrap description list alignment -->
+                            <dt class="col-3">Role</dt>
+                            <dd class="col-9">Artist & Programmer</dd>
     
-            <!--Links-->
-            <!--add in some icons-->
-            <div class="info">
-                <a href="https://splitsuns.itch.io/babel" class="btn btn-lg btnLink">
-                    <span class="icon"><i class="fa-brands fa-itch-io isPink"></i> </span>
-                    <span class="btnText">Itch.io link</span>
-                </a>
+                            <dt class="col-3">Date</dt>
+                            <dd class="col-9">April 2023</dd>
 
-                <a href="mailto: tchen556@bu.edu" class="btn btn-lg btnLink">
-                    <span class="icon"><i class="fa-solid fa-envelope isPink"></i> </span>
-                    <span class="btnText">Contact Me!</span>
-                </a>
-            </div>   
-           
-            <hr>
-            <!--Images/Screenshots-->
-            <img src="babel/babel_titlescreen.PNG" alt="titlescreen" class="imagesCover"> 
+                            <dt class="col-3">Team</dt>
+                            <dd class="col-9">Tiffany C, Lesley C, Alex O, Prima S, Eddie J</dd>
 
-            <hr>
-            <!--More Description-->
-            <h3>About This Project</h3>
-            <p> Babel is a visual novel game made within 48 hours based on the theme "Rebirth." 
-                You awaken and explore an abandoned luxury space cruise as Babel,  
-                an AI customer agent. As you explore, you regain your lost memories and try to make sense of what happened.
-            </p>
+                            <dt class="col-3">Technologies</dt>
+                            <dd class="col-9">Python, Ren'Py, PaintTool SAI 2</dd>
+                        </dl>
+                    </div>
 
-            <h6 class="desLabel isPink"> Programmer & Artist</h6>
-            <p> I designed two of the characters in the game and drew their game sprites. 
-                I explored coding various features in Ren'Py, such as a lock restriction on a room unless all other rooms have been visited,
-                and character motions, such as jump/bounce to provide a more immersive playing experience. </p>
-
-            <div class = "align-center">
-                <img src="babel/navigation_restriction.gif" alt="naviation restriction" style="width: 700px; height: 400px">
-                <img src="babel/noah_jump.gif" alt="noah sprite jump" style="width: 700px; height: 400px">
-                <img src="babel/kaine_screenshot.png" alt="kaine screenshot" style="width: 700px; height: 400px">
-            </div>
-
-            <div class="techn">
-                <h3>Technologies</h3>
-                <ul>
-                    <li>Python</li>
-                    <li>Ren'Py </li>
-                    <li>Paint Tool Sai 2</li>
-                </ul>
-            </div>
+                    <!-- Project Links -->
+                    <div class="project-links">
+                        <div class="icons">
+                            <!-- github link if project has one -->
+                            <a href="https://splitsuns.itch.io/babel" class="link-style"><i class="fa-brands fa-itch-io fa-xl fa-bounce-hover"></i></a>
+                        </div>
             
-            <!--Projects end-->
+                    </div>
+                </div>
 
-        </div> <!--main end-->
+            </div>
+            <!-- About End -->
 
+            <!-- Singular image showcase -->
+            <div class="project-img-showcase bg-light py-5">
+                <div class="container">
+                    <img src="babel/babel_titlescreen.PNG" alt="title screen">
+                </div>
+            </div>
+
+            <!-- Concept, Development What I worked on  -->
+            <div class="project-body">
+                <div class="container my-3 py-5">
+                    <h3 class="thin-font">Concept</h3>
+                    <p class="thin-font">
+                        Babel is a visual novel game based on the theme "Rebirth." The player awakens and explores an abandoned luxury space cruise as Babel, an AI customer agent. 
+                        As Babel explores the ship, he regains his lost memories and tries to make sense of what happened. 
+                    </p>
+                </div>
+                <hr>
+                <div class="container my-3 py-5">
+                    <h3 class="thin-font">Development</h3>
+                    <p class="thin-font">  
+                        The overall development took 48 hours and was a really great experiencce working in a team with people of varying roles. 
+                        
+                        I designed two of the characters in the game and drew their game sprites. 
+                        I programmed the game using Ren'Py, and implemented features such as a lock restriction on a room unless all other rooms have been visited and character jump/bounce to provide a more immersive playing experience. 
+                        
+                    </p>
+                </div>
+            </div>
+
+            <!-- What I worked on preview -->
+            <div class="project-respons bg-light py-4">
+                <div class="project-body">
+                    <h3 class="thin-font">What I worked on</h3>
+                </div>
+                <div class="container">
+                    <!-- features that I worked on -->
+                    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4 g-4 mt-2">
+                        <div class="col">
+                            <div class="feature card">
+                                <img class="card-img-top feature-image" src="babel/babel_titlescreen.PNG" alt="babel launch screen">
+                                <div class="card-body">
+                                    <h5 class="card-title">Game Launch Screen</h5>
+                                    <p class="card-text">Added Prima's video and Eddie's music to the launch screen.</p>
+                                </div>
+                            </div>
+                        </div>                       
+                        <div class="col">
+                            <div class="feature card">
+                                <img class="card-img-top feature-image" src="babel/navigation_restriction.gif" alt="unable to enter navigation bridge">
+                                <div class="card-body">
+                                    <h5 class="card-title">Lock Restriction</h5>
+                                    <p class="card-text">Player is unable to move to the Navigation Bridge until all other areas have been explored.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="feature card">
+                                <img class="card-img-top feature-image" src="babel/noah_jump.gif" alt="noah jumps in surprise">
+                                <div class="card-body">
+                                    <h5 class="card-title">Character Motion</h5>
+                                    <p class="card-text">Added sprite movement and bounce to show the character's surprise.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="feature card">
+                                <img class="card-img-top feature-image" src="babel/kaine_screenshot.png" alt="kaine sprite">
+                                <div class="card-body">
+                                    <h5 class="card-title">Character Design</h5>
+                                    <p class="card-text">Designed and illustrated 2 characters.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div> <!-- row row-cols div-->
+                </div>
+            </div>
+            <!-- What I worked on end -->
+
+
+            <!-- footer -->
+            <footer>
+                <!--Copyright/Credit Statement-->
+                <div class="container mt-3">
+                    <p class="text-muted"> ©Tiffany X. Chen. All Rights Reserved.</p>
+                </div>
+            </footer>
+        </div> 
+        <!-- main div end -->
     </body>
-
-    <footer>
-        <!--Copyright/Credit Statement-->
-        ©Tiffany X. Chen. All Rights Reserved.
-    </footer>
-
 
 </html>
