@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8"/>
+        <title>Tiffany | Custom Website</title>
+
+        <!-- link to CSS -->
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <!-- Boostrap CSS only -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+        <!--FontAwesome-->
+        <script src="https://kit.fontawesome.com/3e81c20759.js" crossorigin="anonymous"></script>
+    </head>
+
+    <body>
+        <div class="project-main">
+            <!-- Navbar -->
+            <!-- Name, About, Project Tabs -->
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="index.html">Tiffany Chen</a>
+                    <div class="navbar-nav">
+                        <!-- <a class="nav-link active" aria-current="page" href="#">Home</a> -->
+                        <a class="nav-link" href="mailto:tchen556@bu.edu"><i class="fa-regular fa-envelope fa-lg"></i></a>
+                        <a class="nav-link" href="index.html#projects">Projects</a>
+                    </div>
+                </div>
+              </nav>
+
+            <!-- About this project -->
+            <div class="project-about">
+                <div class="container my-3">
+                    <!-- title of project -->
+                    <h1 class="display-4">Custom Website</h1>
+                    <p class="lead"> A custom website designed and coded from scratch for CS103 Introduction to Web Programming. 
+                    </p>
+
+
+                    <!-- project-basic-info -->
+                    <div class="project-basic-info">
+                        <dl class="row smaller-text">
+                            <!-- bootstrap description list alignment -->
+                            <dt class="col-3">Role</dt>
+                            <dd class="col-9">Designer & Developer</dd>
+    
+                            <dt class="col-3">Date</dt>
+                            <dd class="col-9">November 2021 - December 2021</dd>
+
+                            <dt class="col-3">Team</dt>
+                            <dd class="col-9">Tiffany C, Lesley, C</dd>
+
+                            <dt class="col-3">Technologies</dt>
+                            <dd class="col-9">HTML, CSS, JavaScript, Bootstrap, JS Utilities</dd>
+                        </dl>
+                    </div>
+
+                    <!-- Project Links -->
+                    <div class="project-links">
+                        <div class="icons">
+                            <!-- github link if project has one -->
+                            <a href="https://github.com/txcchen" class="link-style"><i class="fa-brands fa-square-github fa-xl fa-bounce-hover"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <!-- About End -->
+
+            <!-- Singular image showcase -->
+            <div class="project-img-showcase bg-light py-5">
+                <div class="container">
+                    <img src="odyssea/odysseaaboutsnip.PNG" alt="odyssea about page preview">
+                </div>
+            </div>
+
+            <!-- Concept, Development  -->
+            <div class="project-body">
+                <div class="container my-3 py-5">
+                    <h3 class="thin-font">Concept</h3>
+                    <p class="thin-font">
+                        This project is a website made for Odyssea, a fictional entertainment company developed for our original characters. 
+                        The website includes a description of the company's mission and the actors, singers, models, and staff signed with the company,
+                        as well as a news page and a home page including recent discography.
+                    </p>
+                </div>
+                <hr>
+                <div class="container my-3 py-5">
+                    <h3 class="thin-font">Development</h3>
+                    <p class="thin-font">  
+                        The requirements for the website included responsiveness. 
+                        I experimented with various features such as 
+                        <a href="https://codyhouse.co/gem/morphing-modal-window" class="color-text link-style link-underline">Morphing Modal Window</a> and 
+                        <a href="https://animate.style/" class="color-text link-style link-underline">Animate.css</a> to add movement to character sprites and make the website fun to view
+                        and interact with.
+                        The website was hosted on Boston University's CS server using <a href="https://filezilla-project.org/" class="color-text link-style link-underline">Firezilla</a> and was taken down after I graduated. 
+                        This project serves as my first experience with web progamming and hosting.
+                    </p>
+                </div>
+            </div>
+
+            <!-- What I worked on preview -->
+            <div class="project-respons bg-light py-4">
+                <div class="project-body">
+                    <h3 class="thin-font">What I worked on</h3>
+                </div>
+                <div class="container">
+                    <!-- features that I worked on -->
+                    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-4 mt-2">
+                        <div class="col">
+                            <div class="feature card">
+                                <img class="card-img-top feature-image" src="odyssea/characterpage.gif" alt="clicks on a tab to show how it scrolls to the section">
+                                <div class="card-body">
+                                    <h5 class="card-title">Characters Page</h5>
+                                    <p class="card-text">This page is sectioned into Musicians, Singers, Actors and Staff, 
+                                        with each section accessible by the navigation tabs near the top of the page.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="feature card">
+                                <img class="card-img-top feature-image" src="odyssea/charactermodal.gif" alt="opens a character modal">
+                                <div class="card-body">
+                                    <h5 class="card-title">Character Modal</h5>
+                                    <p class="card-text">When a character is clicked, a modal is opened to show
+                                        the character and basic information with some animations.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="feature card">
+                                <img class="card-img-top feature-image" src="odyssea/aboutpage.gif" alt="about page and credits page">
+                                <div class="card-body">
+                                    <h5 class="card-title">About Page & Credits</h5>
+                                    <p class="card-text">This page includes a description of what the company is, the CEO statement, and mission statement.
+                                        There is also a Credits page to attribute ownership of parts of the website, utilities used, and characters.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div> <!-- row row-cols div-->
+                </div>
+            </div>
+            <!-- What I worked on end -->
+
+
+            <!-- footer -->
+            <footer>
+                <!--Copyright/Credit Statement-->
+                <div class="container mt-3">
+                    <p class="text-muted"> ©Tiffany X. Chen. All Rights Reserved.</p>
+                </div>
+            </footer>
+        </div> 
+        <!-- main div end -->
+    </body>
+
+</html>

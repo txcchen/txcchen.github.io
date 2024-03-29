@@ -3,7 +3,7 @@
 <html lang="en">
     <head>
         <meta charset="utf-8"/>
-        <title>Tiffany | Project Title</title>
+        <title>Tiffany | GiftMe!</title>
 
         <!-- link to CSS -->
         <link rel="stylesheet" type="text/css" href="style.css">
@@ -32,11 +32,9 @@
             <div class="project-about">
                 <div class="container my-3">
                     <!-- title of project -->
-                    <h1 class="display-4">Project Title</h1>
-                    <p class="lead"> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-                        Sit amet cursus sit amet dictum sit.
+                    <h1 class="display-4">GiftMe!</h1>
+                    <p class="lead"> An wishlist management android app built for CS501 E1 Mobile App Practicum Fall 2022 at Boston University.
                     </p>
-
 
                     <!-- project-basic-info -->
                     <div class="project-basic-info">
@@ -46,13 +44,13 @@
                             <dd class="col-9">Developer</dd>
     
                             <dt class="col-3">Date</dt>
-                            <dd class="col-9">Month Year - Month Year</dd>
+                            <dd class="col-9">October 2022 - December 2022</dd>
 
                             <dt class="col-3">Team</dt>
-                            <dd class="col-9">Tiffany C, John S, Jane D</dd>
+                            <dd class="col-9">Tiffany C, Lesley C, Jinpeng L, Alex W, Nick L, Zizhuang G</dd>
 
                             <dt class="col-3">Technologies</dt>
-                            <dd class="col-9">HTML, CSS, JS, Java, etc</dd>
+                            <dd class="col-9">Java, XML, SQLite, FireStore Database, Firebase Dynamic Links, Figma, Android Studio, GitHub</dd>
                         </dl>
                     </div>
 
@@ -60,14 +58,15 @@
                     <div class="project-links">
                         <div class="icons">
                             <!-- github link if project has one -->
-                            <a href="https://github.com/txcchen" class="link-style"><i class="fa-brands fa-square-github fa-xl fa-bounce-hover"></i></a>
+                            <a href="https://github.com/AlAuB/GiftMe" class="link-style"><i class="fa-brands fa-square-github fa-xl fa-bounce-hover"></i></a>
                         </div>
-                        
+
                         <p class="smaller-text">
                             <!-- demo link -->
-                            <a href="https://github.com/txcchen" class="link-style link-underline">Demo</a> |
-                            <a href="https://github.com/txcchen" class="link-style link-underline">Demo Link 2</a>
+                            <a href="https://drive.google.com/file/d/1QHgdroUNSvh8UGWXZgr-vDEMcQjUbpQ8/preview" class="link-style link-underline">Video Demo 1</a> |
+                            <a href="https://drive.google.com/file/d/10moVx2ChqLl3K_fAjD4QwKskCA2pgZGR/preview" class="link-style link-underline">Video Demo 2</a>
                         </p>
+                    
                     </div>
                 </div>
 
@@ -77,7 +76,7 @@
             <!-- Singular image showcase -->
             <div class="project-img-showcase bg-light py-5">
                 <div class="container">
-                    <img src="" alt="">
+                    <img src="giftme/giftmesample.PNG" alt="Emulator of app in Android Studio">
                 </div>
             </div>
 
@@ -86,15 +85,23 @@
                 <div class="container my-3 py-5">
                     <h3 class="thin-font">Concept</h3>
                     <p class="thin-font">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-                        Sit amet cursus sit amet dictum sit.
+                        GiftMe! is a wishlist app for personal events and holidays that 
+                        allows users to create a wishlist of items they want to receive for specific occasions. 
+                        Users can send out a wishlist link to their friends and family to let them see the possible gift options, 
+                        which friends & family can access as guests without having to create an account. 
+                        Friends & family can see which items have been claimed and can claim the gift they want to give.
                     </p>
                 </div>
                 <hr>
                 <div class="container my-3 py-5">
                     <h3 class="thin-font">Development</h3>
-                    <p class="thin-font"> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-                        Sit amet cursus sit amet dictum sit.
+                    <p class="thin-font"> 
+                        This project was developed in weekly sprints with a deliverable & presentation due every week. 
+                        We researched other wishlist apps to come up with the use cases and requirements for GiftMe! 
+                        The preliminary design and features of the app was simulated using Figma, and then developed with Android Studio.
+                        Tasks were split amongst the group members and I learned a lot from my team! 
+                        I worked individually and with a pair programming partner
+                        to implement features.
                     </p>
                 </div>
             </div>
@@ -109,37 +116,44 @@
                     <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4 g-4 mt-2">
                         <div class="col">
                             <div class="feature card">
-                                <img class="card-img-top feature-image" src="workshop/userDashboard.PNG" alt="Card image cap">
+                                <img class="card-img-top feature-image" src="giftme/myuiwork.PNG" alt="Card image cap">
                                 <div class="card-body">
-                                    <h5 class="card-title">Feature 1</h5>
-                                    <p class="card-text">Description</p>
+                                    <h5 class="card-title">UI Layout</h5>
+                                    <p class="card-text">
+                                        I coded some of the UI for viewing the wishlists and items: 
+                                        wishlist specific screen, view friends' collections, specific item screen.</p>
                                 </div>
                             </div>
                         </div>
                         <div class="col">
                             <div class="feature card">
-                                <img class="card-img-top feature-image" src="babel/babel_titlescreen.PNG" alt="Card image cap">
+                                <img class="card-img-top feature-image" src="giftme/addItemtoWishlist.gif" alt="Card image cap">
                                 <div class="card-body">
-                                    <h5 class="card-title">Feature 1</h5>
-                                    <p class="card-text">Description</p>
+                                    <h5 class="card-title">Add to Wishlist</h5>
+                                    <p class="card-text">User can add item to a wishlist.</p>
+                                    <p>View this in <a href="https://drive.google.com/file/d/1QHgdroUNSvh8UGWXZgr-vDEMcQjUbpQ8/preview" class="link-style link-underline">Video Demo 1</a></p>
                                 </div>
                             </div>
                         </div>
                         <div class="col">
                             <div class="feature card">
-                                <img class="card-img-top feature-image" src="giftme/giftmesample.PNG" alt="Card image cap">
+                                <img class="card-img-top feature-image" src="giftme/editItem.gif" alt="Card image cap">
                                 <div class="card-body">
-                                    <h5 class="card-title">Feature 1</h5>
-                                    <p class="card-text">Description</p>
+                                    <h5 class="card-title">Edit Item</h5>
+                                    <p class="card-text">User can edit information about the item.</p>
+                                    <p>View this in <a href="https://drive.google.com/file/d/1QHgdroUNSvh8UGWXZgr-vDEMcQjUbpQ8/preview" class="link-style link-underline">Video Demo 1</a></p>
                                 </div>
                             </div>
                         </div>
                         <div class="col">
                             <div class="feature card">
-                                <img class="card-img-top feature-image" src="giftme/giftmesample.PNG" alt="Card image cap">
+                                <img class="card-img-top feature-image" src="giftme/addfriendscollections.gif" alt="Card image cap">
                                 <div class="card-body">
-                                    <h5 class="card-title">Feature 1</h5>
-                                    <p class="card-text">Description</p>
+                                    <h5 class="card-title">Add Friend's Collection</h5>
+                                    <p class="card-text">User can add a friend's collection to their Friend's Collections tab 
+                                        with a Firebase dynamic link.
+                                    </p>
+                                    <p>View this in <a href="https://drive.google.com/file/d/10moVx2ChqLl3K_fAjD4QwKskCA2pgZGR/preview" class="link-style link-underline">Video Demo 2</a></p>
                                 </div>
                             </div>
                         </div>
@@ -151,10 +165,13 @@
             <!-- Next Steps -->
             <div class="project-body">
                 <div class="container my-3 py-5">
-                    <h3 class="thin-font">Next Steps</h3>
+                    <h3 class="thin-font">Reflection</h3>
                     <p class="thin-font">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-                        Sit amet cursus sit amet dictum sit.
+                        Our goal was to deploy GiftMe! to the Play Store before the end 
+                        of the semester. Unfortunately we ran out of time (time was spent finding and fixing bugs and 
+                        perfecting our presentation)
+                        and we weren't able to before we each left for Christmas break. Overall, this was an amazing experience
+                        and I look forward to working on more usable apps in the future! 
                     </p>
                 </div>
             </div>
